@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area de Cadastro</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap">
+</head>
+<body>
+    <div class="container">
+        <!--imagem e titulo-->
+        <div class="box">
+            <h2>Crie sua conta</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod nihi
+            l officia possimus sunt mollitia enim nisi corrupti accusamus pariatur dolores.</p>
+            <img src="assets/img/imagem-projeto.png" alt="imagem" class="principalImg">
+        </div>
+        <!--fim imagem e titulo-->
+
+        <!--formulários-->
+        <div class="box">
+            <h2>Preencha seus dados</h2>
+            <form action="" method="post" id="dados" name="dados" class="form">
+
+                <div class="box-form-item">
+                    <label for="nome">Nome</label>
+                    <input type="text" placeholder="ex: Bernardo" id="nome" required>
+                </div>
+
+                <div class="box-form-item">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" placeholder="ex: Silva" id="sobrenome" required>
+                </div>
+                
+                <div class="box-form-item">
+                    <label for="user">Usuário</label>
+                    <img src="assets/img/perfil-de-usuario.png" alt="user" class="icon">
+                    <input type="text" placeholder="ex: luktra653@" id="user" required>
+                </div>
+
+                <div class="box-form-item">
+                    <label for="senha">Senha</label>
+                    <img src="assets/img/senha.png" alt="senha" class="icon">
+                    <input type="password" placeholder="ex: 1234#%$" id="senha" required>
+                </div>
+
+                <div class="box-form-item">
+                    <label for="email">Email</label>
+                    <img src="assets/img/o-email.png" alt="senha" class="icon">
+                    <input type="email" placeholder="ex: newyork@dev.com.br" id="email" required>
+                </div>
+
+                <div class="box-form-item">
+                    <label for="data">Data de Nascimento</label>
+                    <img src="assets/img/bolo-de-aniversario.png" alt="senha" class="icon">
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="box-form-item">
+                    <label>Tipo de conta</label>
+                    <div class="box-form-radio">
+                        <div class="radio">
+                            <input type="radio" name="conta" id="conta1">
+                            <label for="conta1">Free</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="conta" id="conta2">
+                            <label for="conta2">Gold</label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" name="conta" id="conta3">
+                            <label for="conta3">Premium</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-form-item">
+                    <label for="selecionar" class="select">Área de Atuação</label>
+                    <select name="selecionar" id="selecionar">
+                        <option value="0" disabled selected>Selecione sua Opção</option>
+                        <option value="1">Área 1</option>
+                        <option value="2">Área 2</option>
+                        <option value="3">Área 3</option>
+                    </select>
+                </div>
+
+                <div class="box-form-button">
+                    <button type="submit">Criar Conta <img src="assets/img/otimizacao.png" alt="criarConta"></button>
+                </div>
+            </form>            
+        </div>
+        <!-- fim formulários-->
+    </div>
+</body>
+</html>
